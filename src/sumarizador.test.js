@@ -20,5 +20,20 @@ describe("Sumarizador", () => {
     });it("deberia devolver ciudad", () => {
         expect(impuesto_estado("CA")).toEqual("8.25%");
     });
+    it("deberia devolver ciudad", () => {
+      expect(impuesto_estado("UT")).toEqual("6.65%");
+    });
+    it("deberia devolver ciudad", () => {
+      expect(impuesto_estado("NV")).toEqual("8.00%");
+    });  
+    it("deberia devolver ciudad", () => {
+      expect(impuesto_estado("TX")).toEqual("6.25%");
+    });
+    it("deberia devolver ciudad", () => {
+      expect(impuesto_estado("AL")).toEqual("4.00%");
+    });
+    it("deberia devolver ciudad", () => {
+      expect(impuesto_estado("UT")).toEqual("6.65%");
+    });
   });
   
