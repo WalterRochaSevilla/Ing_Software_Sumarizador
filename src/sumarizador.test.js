@@ -1,10 +1,11 @@
 import sumarizador from "./sumarizador";
 import mostrador_items from "./items";
 import precio_neto from "./precio_neto";
+import precio from "./precio";
 
 describe("Sumarizador", () => {
     it("deberia devolver Precio", () => {
-      expect(sumarizador(500)).toEqual(500);
+      expect(precio(500)).toEqual(500);
     });
     it("deberia devolver cantidad de items", () => {
       expect(mostrador_items(500)).toEqual(500);
