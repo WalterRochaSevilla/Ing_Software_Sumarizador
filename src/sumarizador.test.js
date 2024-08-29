@@ -3,6 +3,7 @@ import mostrador_items from "./items";
 import precio_neto from "./precio_neto";
 import precio from "./precio";
 import ciudad from "./ciudad";
+import impuesto_estado from "./impuesto_estado";
 
 describe("Sumarizador", () => {
     it("deberia devolver Precio", () => {
@@ -16,6 +17,8 @@ describe("Sumarizador", () => {
     });
     it("deberia devolver ciudad", () => {
         expect(ciudad("NV")).toEqual("NV");
-      });
+    });it("deberia devolver ciudad", () => {
+        expect(impuesto_estado("CA")).toEqual("8.25%");
+    });
   });
   
